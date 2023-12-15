@@ -1,0 +1,90 @@
+ERROR - 2023-09-13 01:04:33 --> Error connecting to the database: ErrorException: oci_pconnect(): ORA-12170: TNS:Connect timeout occurred in C:\xampp\htdocs\projectci4\system\Database\OCI8\Connection.php:129
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_pconnect():...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\projectci4\system\Database\OCI8\Connection.php(129): oci_pconnect('materialmgmt', 'm4t3r14lmgmt', '(DESCRIPTION=(A...', 'utf8')
+#2 C:\xampp\htdocs\projectci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\OCI8\Connection->connect(true)
+#3 C:\xampp\htdocs\projectci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\projectci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\projectci4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\projectci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\projectci4\app\Controllers\Home.php(22): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\projectci4\system\CodeIgniter.php(932): App\Controllers\Home->MonitoringBPB()
+#9 C:\xampp\htdocs\projectci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\projectci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\projectci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-09-13 01:04:33 --> Unable to connect to the database.
+Main connection [oci8]: oci_pconnect(): ORA-12170: TNS:Connect timeout occurred
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "MM_LIST_BPB"', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(22): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->MonitoringBPB()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\projectci4\\public\\index.php')
+ERROR - 2023-09-13 01:05:18 --> Error connecting to the database: ErrorException: oci_pconnect(): ORA-12170: TNS:Connect timeout occurred in C:\xampp\htdocs\projectci4\system\Database\OCI8\Connection.php:129
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_pconnect():...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\projectci4\system\Database\OCI8\Connection.php(129): oci_pconnect('materialmgmt', 'm4t3r14lmgmt', '(DESCRIPTION=(A...', 'utf8')
+#2 C:\xampp\htdocs\projectci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\OCI8\Connection->connect(true)
+#3 C:\xampp\htdocs\projectci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\projectci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\projectci4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\projectci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\projectci4\app\Controllers\Home.php(34): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\projectci4\system\CodeIgniter.php(932): App\Controllers\Home->FormBPB()
+#9 C:\xampp\htdocs\projectci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\projectci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\projectci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-09-13 01:05:18 --> Unable to connect to the database.
+Main connection [oci8]: oci_pconnect(): ORA-12170: TNS:Connect timeout occurred
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "MM_MASTER_LOKASI"', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(34): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->FormBPB()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\projectci4\\public\\index.php')
+ERROR - 2023-09-13 01:05:40 --> Error connecting to the database: ErrorException: oci_pconnect(): ORA-12170: TNS:Connect timeout occurred in C:\xampp\htdocs\projectci4\system\Database\OCI8\Connection.php:129
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'oci_pconnect():...', 'C:\\xampp\\htdocs...', 129, Array)
+#1 C:\xampp\htdocs\projectci4\system\Database\OCI8\Connection.php(129): oci_pconnect('materialmgmt', 'm4t3r14lmgmt', '(DESCRIPTION=(A...', 'utf8')
+#2 C:\xampp\htdocs\projectci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\OCI8\Connection->connect(true)
+#3 C:\xampp\htdocs\projectci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\projectci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\projectci4\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\projectci4\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\projectci4\app\Controllers\Home.php(34): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\projectci4\system\CodeIgniter.php(932): App\Controllers\Home->FormBPB()
+#9 C:\xampp\htdocs\projectci4\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\projectci4\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projectci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\projectci4\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-09-13 01:05:40 --> Unable to connect to the database.
+Main connection [oci8]: oci_pconnect(): ORA-12170: TNS:Connect timeout occurred
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "MM_MASTER_LOKASI"', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(34): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->FormBPB()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\projectci4\\public\\index.php')

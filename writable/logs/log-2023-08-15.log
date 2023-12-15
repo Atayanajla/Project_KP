@@ -1,0 +1,12 @@
+CRITICAL - 2023-08-15 02:36:00 --> Undefined index: KDKERJ
+in APPPATH\Views\form\formbpb.php on line 302.
+ 1 APPPATH\Views\form\formbpb.php(302): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: KDKERJ', 'C:\\xampp\\htdocs\\projectci4\\app\\Views\\form\\formbpb.php', 302, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectci4\\app\\Views\\form\\formbpb.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('/form/formbpb', [], true)
+ 5 APPPATH\Controllers\Home.php(37): view('/form/formbpb', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->FormBPB()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\projectci4\\public\\index.php')

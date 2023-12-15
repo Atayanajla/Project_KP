@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 200px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+
+  .sidebar-nav .offcanvas-body .navbar-dark {
+    margin-top: 70px;
+  }
+}
+.bg-custom-blue {
+  background-color: #1a237e;
+  font-size: 14px;
+}
+.my-col {
+  height: 30px;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.form-control-underline {
+  border: none;
+  border-bottom: 1px solid #ccc; /* Atur warna dan ukuran garis bawah sesuai kebutuhan */
+  border-radius: 0; /* Untuk memastikan tidak ada border-radius yang digunakan */
+  padding: 0; /* Hilangkan padding untuk tampilan yang lebih baik */
+  background: transparent; /* Hapus latar belakang agar tampilan menjadi transparan */
+}
+
+.text-small{
+  font-size: 14px;
+}
+
+.no-border {
+  border: none;
+}
+
+/* Ganti warna teks placeholder menjadi transparan */
+input[type="date"]::placeholder {
+  color: transparent;
+}
+
+
